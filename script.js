@@ -25,3 +25,38 @@ function copyEmail() {
         console.error("Erro ao copiar o email: ", err);
     });
 }
+const swiper = new Swiper('.slider-wrapper', {
+  loop: false,
+  grabCursor: true,
+  spaceBetween: 30,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  watchOverflow: true,
+  allowTouchMove: true,
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    620: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    },
+  },
+
+  on: {
+    reachEnd: function () {
+      this.navigation.nextEl.style.display = 'none';
+    },
+    fromEdge: function () {
+      this.navigation.nextEl.style.display = '';
+    }
+  }
+});

@@ -30,14 +30,13 @@ section {
     z-index: 99;
     height: 80px;
     background-color: #161616;
-    padding-bottom: 1;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
     height: 50px;
-    padding: 18px;
+    margin-top: 30px;
 }
 
 .navbar a {
@@ -53,13 +52,13 @@ section {
     margin: 8px;
     transition: opacity .35s ease-in-out;
     margin: 0 30px;
-   }
+}
 
 .navbar a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -18px;
+    bottom: 20px;
     width: 0;
     height: 2px;
     background-color: var(--maintext);
@@ -84,25 +83,37 @@ section .about {
 
 .main-container {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+
 }
 
-.main-container-rigth, .main-container-left  {
+.main-container-left {
     flex: 1;
-    margin-top: 200px;
+    margin: 14px 0 0 60px;
     max-width: 700px;
 }
 
+.main-container-rigth {
+    flex: 1;
+    margin-top: 14px;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-container-left-title {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
 }
+
 .main-container-rigth img {
     max-width: 100%;
-    height: 400px;
-    display: block;
+    height: 360px;
     border-radius: 50%;
+    margin-top: 60px;
 }
 
 .title {
@@ -133,58 +144,6 @@ align-items: center;
     max-width: 1000px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(179, 105, 8, 0.873);
-}
-
-.box-projects {
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    gap: 20px;
-    flex: 1 1 calc(33% - 2rem);
-    padding: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-}
-
-/*projetos individuais, caixinhas*/
-.project1,
-.project2,
-.project3,
-.project4,
-.project5,
-.project6,
-.project7,
-.project8 {
-    border: var(--border);
-    padding: 10px;
-}
-
-.projects h2 {
-    color: var(--sectex);
-    /*nome projeto*/
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: .1rem;
-    margin-bottom: 10px;
-}
-
-.projects .project-img {
-width: 200px;
-
-}
-p {
-    /*descrição projeto*/
-    color: var(--sectex);
-    font-size: 20px;
-}
-
-/*projetos individuais, icones*/
-.projects-icon {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    margin-top: 10px;
 }
 
 /*Skills individuais, caixinhas*/
@@ -295,14 +254,65 @@ p {
     text-align: center;
 }
 
-.projects,
-.skills p {
-    /*descrição projeto e skills*/
-    color: #970d0d;
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
 }
+
+.swiper-wrapper .swiper-slide {
+    color: var(--sectex);
+    user-select: none;
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.projects h2 {
+    color: var(--sectex);
+    /*nome projeto*/
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+
+.swiper-wrapper .swiper-slide:hover {
+    transform: scale(97%);
+    opacity: 0.8;
+}
+
+.swiper-wrapper .swiper-slide .project-img {
+    height: 170px;
+    width: 300px;
+    margin: 20px;
+}
+
+.slider-wrapper .swiper-slide-button {
+    color: var(--maintext);
+    margin-top: -50px;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+    opacity: 0.7;
+}
+
+.slider-wrapper .swiper-slide-button:active {
+    opacity: 0.5;
+}
+
+.swiper-button-disabled {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
 
 section .contact {
     display: flex;
@@ -324,6 +334,8 @@ section .contact {
     height: 20px;
     margin-left: 10px;
     transition: opacity 1s ease-in-out;
+    margin: 10px;
+    cursor: pointer;
 }
 
 .contact p {
@@ -331,6 +343,8 @@ section .contact {
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+    color: var(--sectex);
 }
 
 .btn-copy {
@@ -353,16 +367,15 @@ footer {
 
 footer a {
     text-decoration: none;
-    color:var(--sectex);
+    color: var(--sectex);
     font-family: 700;
 }
 
 footer h1 {
-    color:var(--sectex);
+    color: var(--sectex);
     font-size: 15px;
     font-weight: 400;
     padding: 10px;
-
 }
 
 .contact-icon {
@@ -376,25 +389,24 @@ footer h1 {
 .contact-icon a {
     display: inline-block;
     position: relative;
-    margin: 0 10px; /* Espaço entre os ícones */
-    width: 50px; 
+    margin: 0 10px;
+    width: 50px;
     height: 50px;
     text-align: center;
-    border-radius: 50%; /* Torna o fundo redondo */
+    border-radius: 50%;
     transition: background-color 0.3s ease;
-
 }
 
 .contact-icon i {
-    font-size: 20px; /* Ajuste conforme necessário */
+    font-size: 20px;
     color: var(--sectex);
     transition: color 0.3s ease;
 }
 
 .contact-icon a:hover {
-transform: translateY(-5px);
-transition: 0.3 ease-in-out;
-background-color: var(--maintext);
+    transform: translateY(-5px);
+    transition: 0.3 ease-in-out;
+    background-color: var(--maintext);
 }
 
 .contact-icon a:hover i {
