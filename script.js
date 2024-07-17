@@ -59,4 +59,5 @@ const swiper = new Swiper('.slider-wrapper', {
       this.navigation.nextEl.style.display = '';
     }
   }
-});
+
+  });

@@ -13,6 +13,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-padding-top: 50px; /* Ajuste o valor conforme a altura da sua navbar */
+}
+
 body {
     background: var(--mainbg);
 }
@@ -20,6 +24,7 @@ body {
 section {
     margin: 0 auto;
     max-width: 1200px;
+    padding-bottom: 20px;
 }
 
 .header {
@@ -31,6 +36,7 @@ section {
     height: 80px;
     background-color: #161616;
 }
+
 
 .navbar {
     display: flex;
@@ -79,13 +85,14 @@ section .about {
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    padding-top: 60px;
+    margin-top: -60px;
 }
 
 .main-container {
     display: flex;
     margin-bottom: 50px;
-    margin-top: 100px;
-
+    margin-top: 200px;
 }
 
 .main-container-left {
@@ -138,12 +145,12 @@ section .about {
     color: var(--sectex);
 }
 
-.section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 1000px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(179, 105, 8, 0.873);
+.skills {
+margin-top: 220px;
+}
+
+#about, #skills {
+    margin-bottom: 100px;
 }
 
 /*Skills individuais, caixinhas*/
@@ -322,6 +329,14 @@ section .contact {
 .box-contact {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.box-contact-email {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+
 }
 
 .btn-copy {
@@ -411,4 +426,10 @@ footer h1 {
 
 .contact-icon a:hover i {
     color: var(--sectex);
+}
+
+#about, #skills, #projects {
+    padding-top: 60px;
+    margin-top: -60px;
+    margin-bottom: 80px;
 }
