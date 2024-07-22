@@ -204,19 +204,18 @@ section .about {
 
 .container-left {
     flex: 1;
-    margin: 14px 0 0 60px;
+    margin: 5px 0 0 60px;
     max-width: 700px;
 }
 
 .container-left img {
-    height: 360px;
+    height: 320px;
     border-radius: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .container-left h1 {
-    font-size: 30px;
-    margin: 10px 0;
+    font-size: 25px;
     font-family: "Raleway", sans-serif;
     font-weight: 100;
     letter-spacing: 5px;
@@ -228,12 +227,12 @@ section .about {
     color: var(--sectex);
     margin: 10px 0;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 }
 
 .container-right {
-    margin: 14px 60px 0 60px;
+    margin: 14px 80px 0 150px;
     display: grid;
     justify-content: right;
     text-align: right;
@@ -243,6 +242,7 @@ section .about {
     display: flex;
     align-items: center;
     justify-content: right;
+    margin-bottom: 50px;
 }
 
 .title {
@@ -264,7 +264,6 @@ section .about {
     text-align: justify;
     color: var(--sectex);
     justify-self: right;
-    margin: -20px;
  }
 
 #skills {
@@ -709,6 +708,29 @@ margin-bottom: 50px;
 }
 
 @media screen and (max-width: 620px) {
+    
+    .container-left {
+        margin: 0 0 40px 0;
+        
+    }
+    
+    .container-left img {
+        height: 250px;
+        width: 250px;
+      }
+
+    .title {
+        font-size: 20px;
+        margin: 5px;
+      }
+
+.container-right {
+    margin: 20px;
+}
+
+      .container-right p {
+        font-size: 16px;      }
+
     .box-skills {
         display: grid;
         grid-template-columns: 90px 90px 90px;
@@ -751,5 +773,5 @@ margin-bottom: 50px;
     .swiper-wrapper .swiper-slide p {
         margin-top: 0px;
     }
-
+   
 }
