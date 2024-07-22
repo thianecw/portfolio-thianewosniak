@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;300;500;800;1,800&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" type="image/png" href="./assets/favicon-16x16.png">
@@ -23,197 +27,209 @@
     <i class="devicon-github-original-wordmark colored"></i>
     <i class="devicon-github-original"></i>
 
-    <div class="content-wrapper">
-        <header class="header">
-            <section>
-                <nav class="navbar">
+    <section>
+        <header>
+            <nav class="navbar">
+                <div class="menu-items">
                     <a href="#about"> sobre mim </a>
                     <a href="#skills"> skills </a>
                     <a href="#projects"> projetos </a>
                     <a href="#contact"> contato </a>
-                </nav>
+            </nav>
+            </div>
+            <div class="table_center">
+                <div class="drop-down">
+                    <div id="dropDown" class="drop-down__button">
+                        <img src="https://img.icons8.com/ios/50/ffffff/menu--v1.png" alt="menu--v1" />
+                    </div>
+                    <div class="drop-down__menu-box">
+                        <ul class="drop-down__menu">
+                            <li class="drop-down__item"> <a href=#about class="drop-down__item"> sobre mim</a> </li>
+                            <li class="drop-down__item"> <a href=#skills class="drop-down__item"> skills </a> </li>
+                            <li class="drop-down__item"> <a href=#projects class="drop-down__item"> projetos </a> </li>
+                            <li class="drop-down__item"> <a href=#contact class="drop-down__item"> contato </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
+    </section>
 
-        <section id="about" class="about">
-            <div class="main-container">
-                <div class="main-container-rigth">
-                    <img src="./assets/profileorange.jpg" alt="profile-img" />
+    <section id="about" class="about">
+        <div class="main-container">
+
+            <div class="container-left">
+                <img src="./assets/profileorange.jpg" alt="profile-img" />
+                <h1> Thiane Wosniak </h1>
+                <h2> Desenvolvedora full-stack</h2>
+            </div>
+
+            <div class="container-right">
+                <div class="container-right-title">
+                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/ffffff/less-than.png"
+                        alt="less-than" />
+                    <h3 class="title" id="#about"> Sobre mim</h3>
+                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/ffffff/more-than.png"
+                        alt="more-than" />
                 </div>
+                <p> Grande entusiasta da tecnologia e do mundo da programação.</p>
+                <p> Minha jornada na programação começou recentemente, mas com dedicação minha evolução tem sido
+                    constante. Além disso, como profissional em transição de carreira, trago uma perspectiva única para
+                    o campo da tecnologia.</p>
+                <p> Estou pronta para transformar ideias em código e contribuir para projetos inovadores. </p>
+            </div>
+        </div>
+    </section>
 
-                <div class="main-container-left">
-                    <div class="main-container-left-title">
-                        <img width="24" height="24"
-                            src="https://img.icons8.com/material-outlined/24/ffffff/less-than.png" alt="less-than" />
-                        <h1 class="title" id="#about"> Sobre mim</h1>
-                        <img width="24" height="24"
-                            src="https://img.icons8.com/material-outlined/24/ffffff/more-than.png" alt="more-than" />
-                    </div>
+    <section id="skills" class="skills">
+        <h1 class="title">Skills</h1>
 
+        <div class="box-skills">
 
-                    <p> Olá! Sou Thiane, desenvolvedora full-stack e entusiasta da tecnologia.
-                        <br>
-                        <br>
-                        Minha jornada na programação começou recentemente, mas com dedicação minha evolução tem sido constante. Além disso, como profissional em transição de carreira, trago uma perspectiva única para o campo da tecnologia.
-                        <br>
-                        <br>
-                        Estou pronta para transformar ideias em código e contribuir para projetos inovadores.
-                    </p>
+            <div class="box-skill1">
+                <h1> HTML</h1>
+                <div class="skill1">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
                 </div>
             </div>
-        </section>
 
-        <section id="skills" class="skills">
-            <h1 class="title">Skills</h1>
-
-            <div class="box-skills">
-
-                <div class="box-skill1">
-                    <h1> HTML</h1>
-                    <div class="skill1">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                    </div>
-                </div>
-
-                <div class="box-skill2">
-                    <h1> CSS</h1>
-                    <div class="skill2">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                    </div>
-                </div>
-
-                <div class="box-skill3">
-                    <h1> Java Script</h1>
-                    <div class="skill3">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                    </div>
-                </div>
-
-                <div class="box-skill4">
-                    <h1> React</h1>
-                    <div class="skill4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-                    </div>
-                </div>
-
-                <div class="box-skill5">
-                    <h1> Node.js</h1>
-                    <div class="skill5">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-                    </div>
-                </div>
-
-                <div class="box-skill6">
-                    <h1> GitHub</h1>
-                    <div class="skill6">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-                    </div>
-                </div>
-
-                <div class="box-skill7">
-                    <h1> MongoDB</h1>
-                    <div class="skill7">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
-                    </div>
-                </div>
-
-                <div class="box-skill8">
-                    <h1> Canva</h1>
-                    <div class="skill8">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <h1 class="title">Projetos</h1>
-
-            <div class="container swiper">
-                <div class="slider-wrapper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <h2>Previsão do tempo</h2>
-                            <a href="https://thianecw.github.io/previsaodotempo/" target="_blank" class="project1-link">
-                                <img class="project-img" src="./assets/previsaotempo.png" /> </a>
-                            <p>DESCRIÇÃO PROJETO</p>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <h2>To-Do List</h2>
-                            <a href="https://thianecw.github.io/To-Do-list/" target="_blank" class="project2-link">
-                                <img class="project-img" src="./assets/todolist.png" /> </a>
-                            <p>DESCRIÇÃO PROJETO</p>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <h2>Cafeteria</h2>
-                            <a href="https://thianecw.github.io/Bean-Code/" target="_blank" class="project2-link">
-                                <img class="project-img" src="./assets/cafeteria.png" /> </a>
-                            <p>DESCRIÇÃO PROJETO</p>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <h2>Mario Encanador </h2>
-                            <a href="https://thianecw.github.io/Mario-Encanador/" target="_blank" class="project4-link">
-                                <img class="project-img" src="./assets/mario.png" /> </a>
-                            <p>DESCRIÇÃO PROJETO</p>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <h2>Mario Encanador </h2>
-                            <a href="https://thianecw.github.io/Mario-Encanador/" target="_blank" class="project4-link">
-                                <img class="project-img" src="./assets/mario.png" /> </a>
-                            <p>DESCRIÇÃO PROJETO</p>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <h2>Mario Encanador </h2>
-                            <a href="https://thianecw.github.io/Mario-Encanador/" target="_blank" class="project4-link">
-                                <img class="project-img" src="./assets/mario.png" /> </a>
-                            <p>DESCRIÇÃO PROJETO</p>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <h2>Mario Encanador </h2>
-                            <a href="https://thianecw.github.io/Mario-Encanador/" target="_blank" class="project4-link">
-                                <img class="project-img" src="./assets/mario.png" /> </a>
-                            <p>DESCRIÇÃO PROJETO</p>
-                        </div>
-
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev swiper-slide-button "></div>
-                    <div class="swiper-button-next swiper-slide-button "></div>
+            <div class="box-skill2">
+                <h1> CSS</h1>
+                <div class="skill2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
                 </div>
             </div>
-        </section>
 
-        <section id="contact" class="contact">
-            <h1 class="title"> Contato </h1>
-            <div class="box-contact">
-                <div class="box-contact-email">
-                    <p id="email">thianecw@hotmail.com</p><br>
-                    <a class="btn-copy" title="Copy" onclick="copyEmail()">
-                        <img id="btn-copy-img" class="btn-copy-img" width="50" height="50"
-                            src="https://img.icons8.com/material-rounded/24/ffffff/copy.png" alt="copy" />
-                    </a>
-                </div>
-                <div class="contact-icon">
-                    <a href="https://www.linkedin.com/in/thiane-wosniak" target="_blank" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.github.com/thianecw" target="_blank" title="GitHub"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://wa.link/ej4rzv" target="_blank" title="WhatsApp"><i
-                            class="fa-brands fa-whatsapp"></i></a>
+            <div class="box-skill3">
+                <h1> Java Script</h1>
+                <div class="skill3">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
                 </div>
             </div>
-        </section>
+
+            <div class="box-skill4">
+                <h1> React</h1>
+                <div class="skill4">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                </div>
+            </div>
+
+            <div class="box-skill5">
+                <h1> Node.js</h1>
+                <div class="skill5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                </div>
+            </div>
+
+            <div class="box-skill6">
+                <h1> GitHub</h1>
+                <div class="skill6">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                </div>
+            </div>
+
+            <div class="box-skill8">
+                <h1> Git</h1>
+                <div class="skill8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                </div>
+            </div>
+
+            <div class="box-skill7">
+                <h1> MongoDB</h1>
+                <div class="skill7">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h1 class="title">Projetos</h1>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2>Previsão do tempo</h2>
+                        <a href="https://thianecw.github.io/previsaodotempo/" target="_blank" class="project1-link">
+                            <img class="project-img" src="./assets/previsaotempo.png" /> </a>
+                        <p> Aplicativo que fornece a previsão do tempo para cidades e países em tempo real usando
+                            uma API. Desenvolvido com <b>HTML, CSS e JavaScript</b> para uma experiência interativa e
+                            precisa.</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>To-Do List</h2>
+                        <a href="https://thianecw.github.io/To-Do-list/" target="_blank" class="project2-link">
+                            <img class="project-img" src="./assets/todolist.png" /> </a>
+                        <p> Ferramenta web para gerenciamento de tarefas, permitindo criar, editar, marcar como
+                            concluída e excluir itens de uma lista. Construída com <b>HTML, CSS e JavaScript</b> para
+                            uma
+                            gestão eficiente de tarefas diárias.</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Conversor de moedas </h2>
+                        <a href="https://thianecw.github.io/Currency-converter/" target="_blank">
+                            <img class="project-img" src="./assets/conversor.png" /> </a>
+                        <p>Aplicativo de conversão de moedas em tempo real, utilizando uma <b>API</b> para taxas
+                            atualizadas. Desenvolvido com HTML, CSS e JavaScript, facilita a conversão entre
+                            diversas moedas com precisão.</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Cafeteria</h2>
+                        <a href="https://thianecw.github.io/Bean-Code/" target="_blank">
+                            <img class="project-img" src="./assets/cafeteria.png" /> </a>
+                        <p> Website para uma cafeteria, apresentando menu, avaliações de clientes, informações de
+                            contato e localização. Criado com <b>HTML e CSS</b> para uma apresentação elegante e
+                            funcional.
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Mario Encanador </h2>
+                        <a href="https://thianecw.github.io/Mario-Encanador/" target="_blank" class="project4-link">
+                            <img class="project-img" src="./assets/mario.png" /> </a>
+                        <p> Site divertido para promoção de serviços de encanamento, incluindo um formulário de
+                            contato para solicitações de orçamento. Desenvolvido com <b>HTML e CSS</b> para um visual
+                            atraente e acessível.</p>
+                    </div>
+
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev swiper-slide-button "></div>
+                <div class="swiper-button-next swiper-slide-button "></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h1 class="title"> Contato </h1>
+        <div class="box-contact">
+            <div class="box-contact-email">
+                <p id="email">thianecw@hotmail.com</p><br>
+                <a class="btn-copy" title="Copy" onclick="copyEmail()">
+                    <img id="btn-copy-img" class="btn-copy-img" width="50" height="50"
+                        src="https://img.icons8.com/material-rounded/24/ffffff/copy.png" alt="copy" />
+                </a>
+            </div>
+            <div class="contact-icon">
+                <a href="https://www.linkedin.com/in/thiane-wosniak" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.github.com/thianecw" target="_blank" title="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://wa.link/ej4rzv" target="_blank" title="WhatsApp"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
 
     </div>
 
