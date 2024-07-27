@@ -264,7 +264,7 @@ section .about {
     text-align: justify;
     color: var(--sectex);
     justify-self: right;
- }
+}
 
 #skills {
     margin-top: 220px;
@@ -646,36 +646,36 @@ footer h1 {
         width: 30px;
     }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-}
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
 
-.container-left {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-bottom: 50px;
-}
+    .container-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
 
-.container-left img {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 40px;
-}
+    .container-left img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 40px;
+    }
 
-.container-right {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
+    .container-right {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
 
-.container-right-title {
-    margin-bottom: 20px;
-}
+    .container-right-title {
+        margin-bottom: 20px;
+    }
 
-.container-right p {
+    .container-right p {
         font-size: 18px;
         margin: 10px;
     }
@@ -708,28 +708,33 @@ margin-bottom: 50px;
 }
 
 @media screen and (max-width: 620px) {
-    
+
     .container-left {
-        margin: 0 0 40px 0;
-        
+        margin: 0 0 20px 0;
     }
-    
+
     .container-left img {
         height: 250px;
         width: 250px;
-      }
+        margin: 0 0 20px 0;
+    }
+
+section {
+    padding-bottom: 0;
+}
 
     .title {
         font-size: 20px;
         margin: 5px;
-      }
+    }
 
-.container-right {
-    margin: 20px;
-}
+    .container-right {
+        margin: 20px;
+    }
 
-      .container-right p {
-        font-size: 16px;      }
+    .container-right p {
+        font-size: 16px;
+    }
 
     .box-skills {
         display: grid;
@@ -767,11 +772,16 @@ margin-bottom: 50px;
 
     .swiper-wrapper .swiper-slide {
         padding: 15px;
-        height: 400px;
+        height: 350px;
     }
 
     .swiper-wrapper .swiper-slide p {
         margin-top: 0px;
     }
-   
+
+    .contact p {
+        padding: 0;
+        margin: 0;
+    }
+
 }
