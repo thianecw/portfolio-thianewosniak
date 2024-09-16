@@ -465,7 +465,6 @@ section .contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 .btn-copy {
