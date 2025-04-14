@@ -1,113 +1,110 @@
-function copyEmail() {
-  // Seleciona o elemento que contém o email
-  var emailElement = document.getElementById("email");
-  var emailText = emailElement.textContent;
+const copyEmail = () => {
+	// Seleciona o elemento que contém o email
+	const emailElement = document.getElementById("email");
+	const emailText = emailElement.textContent;
 
-  // Usa a API de Clipboard para copiar o texto
-  navigator.clipboard.writeText(emailText).then(function() {
-      // Sucesso ao copiar
-      
-      // Troca a imagem do botão
-      var imgElement = document.getElementById("btn-copy-img");
-      var originalSrc = imgElement.src;
-      var originalAlt = imgElement.alt;
+	// Usa a API de Clipboard para copiar o texto
+	navigator.clipboard.writeText(emailText).then(
+		() => {
+			// Sucesso ao copiar
 
-      imgElement.src = "https://img.icons8.com/ios/50/ffffff/checkmark--v1.png";
-      imgElement.alt = "copied";
+			// Troca a imagem do botão
+			const imgElement = document.getElementById("btn-copy-img");
+			const originalSrc = imgElement.src;
+			const originalAlt = imgElement.alt;
 
-      // Reverte a imagem de volta ao original após 2 segundos
-      setTimeout(function() {
-          imgElement.src = originalSrc;
-          imgElement.alt = originalAlt;
-      }, 2000); // 2000 milissegundos = 2 segundos
-  }, function(err) {
-      // Erro ao copiar
-      console.error("Erro ao copiar o email: ", err);
-  });
-}
-const swiper = new Swiper('.slider-wrapper', {
-loop: false,
-grabCursor: true,
-spaceBetween: 30,
+			imgElement.src = "https://img.icons8.com/ios/50/ffffff/checkmark--v1.png";
+			imgElement.alt = "copied";
 
-pagination: {
-el: '.swiper-pagination',
-clickable: true,
-dynamicBullets: true 
+			// Reverte a imagem de volta ao original após 2 segundos
+			setTimeout(() => {
+				imgElement.src = originalSrc;
+				imgElement.alt = originalAlt;
+			}, 2000);
+		},
+		(err) => {
+			// Erro ao copiar
+			console.error("Erro ao copiar o email: ", err);
+		},
+	);
+};
 
-},
+const swiper = new Swiper(".slider-wrapper", {
+	loop: false,
+	grabCursor: false,
+	spaceBetween: 30,
 
-// Navigation arrows
-navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev',
-},
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		dynamicBullets: true,
+	},
 
-watchOverflow: true,
-allowTouchMove: true,
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
 
-breakpoints: {
-  0: {
-    slidesPerView: 1
-  },
-  620: {
-    slidesPerView: 2
-  },
-  1024: {
-    slidesPerView: 3
-  },
-},
+	watchOverflow: true,
+	allowTouchMove: true,
 
-on: {
-  reachEnd: function () {
-    this.navigation.nextEl.style.display = 'none';
-  },
-  fromEdge: function () {
-    this.navigation.nextEl.style.display = '';
-  }
-}
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		620: {
+			slidesPerView: 2,
+		},
+		1024: {
+			slidesPerView: 3,
+		},
+	},
 
+	on: {
+		reachEnd: function () {
+			this.navigation.nextEl.style.display = "none";
+		},
+		fromEdge: function () {
+			this.navigation.nextEl.style.display = "";
+		},
+	},
 });
+document.addEventListener("DOMContentLoaded", () => {
+	const menuIcon = document.querySelector(".menu-icon");
+	const navbar = document.querySelector(".navbar");
 
-document.addEventListener('DOMContentLoaded', function() {
-  const menuIcon = document.querySelector('.menu-icon');
-  const navbar = document.querySelector('.navbar');
+	menuIcon?.addEventListener("click", () => {
+		navbar.classList.toggle("active");
+	});
 
-  menuIcon.addEventListener('click', function() {
-      navbar.classList.toggle('active');
-  });
+	// Fechar o menu ao clicar fora dele em modo mobile
+	document.addEventListener("click", (e) => {
+		if (
+			window.innerWidth <= 768 &&
+			!navbar.contains(e.target) &&
+			!menuIcon.contains(e.target)
+		) {
+			navbar.classList.remove("active");
+		}
+	});
 
-  // Fechar o menu ao clicar fora dele em modo mobile
-  document.addEventListener('click', function(e) {
-      if (window.innerWidth <= 768 && !navbar.contains(e.target) && !menuIcon.contains(e.target)) {
-          navbar.classList.remove('active');
-      }
-  });
-});
+	const dropDown = document.getElementById("dropDown");
+	const dropDownMenu = document.querySelector(".drop-down");
 
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM fully loaded and parsed');
+	if (dropDown && dropDownMenu) {
+		dropDown.addEventListener("click", (event) => {
+			event.stopPropagation();
+			dropDownMenu.classList.toggle("drop-down--active");
+		});
 
-  var dropDown = document.getElementById('dropDown');
-  var dropDownMenu = document.querySelector('.drop-down');
-
-  console.log('dropDown:', dropDown);
-  console.log('dropDownMenu:', dropDownMenu);
-
-  if (dropDown && dropDownMenu) {
-    dropDown.addEventListener('click', function(event) {
-      console.log('Dropdown clicked');
-      event.stopPropagation();
-      dropDownMenu.classList.toggle('drop-down--active');
-    });
-
-    document.addEventListener('click', function(event) {
-      console.log('Document clicked');
-      if (!dropDownMenu.contains(event.target) && !dropDown.contains(event.target)) {
-        dropDownMenu.classList.remove('drop-down--active');
-      }
-    });
-  } else {
-    console.log('dropDown or dropDownMenu not found');
-  }
+		document.addEventListener("click", (event) => {
+			if (
+				!dropDownMenu.contains(event.target) &&
+				!dropDown.contains(event.target)
+			) {
+				dropDownMenu.classList.remove("drop-down--active");
+			}
+		});
+	}
 });

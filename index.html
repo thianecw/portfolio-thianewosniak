@@ -18,7 +18,6 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" type="image/png" href="./assets/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <title>Portfolio Thiane</title>
 </head>
 
@@ -76,150 +75,256 @@
                 <p> Minha jornada na programação começou recentemente, mas com dedicação minha evolução tem sido
                     constante. Além disso, como profissional em transição de carreira, trago uma perspectiva única para
                     o campo da tecnologia.</p>
-                <p> Estou pronta para transformar ideias em código e contribuir para projetos inovadores. </p>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills">
-        <h1 class="title">Skills</h1>
-
-        <div class="box-skills">
-
-            <div class="box-skill1">
-                <h1> HTML</h1>
-                <div class="skill1">
+    <h1 class="title">Skills</h1>
+    <section class="skills-container" id="skills">
+        <div class="box-skill">
+                <h1 class="html"> HTML</h1>
+                <div class="skill-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-                </div>
             </div>
+        </div>
 
-            <div class="box-skill2">
-                <h1> CSS</h1>
-                <div class="skill2">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-                </div>
+        <div class="box-skill">
+            <h1 class="css">CSS</h1>
+            <div class="skill-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS logo" />
             </div>
+          </div>
 
-            <div class="box-skill3">
-                <h1> Java Script</h1>
-                <div class="skill3">
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-                </div>
+          <div class="box-skill">
+            <h1 class="js">JavaScript</h1>
+            <div class="skill-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JS logo" />
             </div>
+          </div>
 
-            <div class="box-skill4">
-                <h1> React</h1>
-                <div class="skill4">
+            <div class="box-skill">
+                <h1 class="react"> React</h1>
+                <div class="skill-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
                 </div>
             </div>
 
-            <div class="box-skill5">
-                <h1> Node.js</h1>
-                <div class="skill5">
+            <div class="box-skill">
+                <h1 class="node"> Node.js</h1>
+                <div class="skill-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
                 </div>
             </div>
 
-            <div class="box-skill6">
-                <h1> GitHub</h1>
-                <div class="skill6">
+            <div class="box-skill">
+                <h1 class="github"> GitHub</h1>
+                <div class="skill-img" id="github">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
                 </div>
             </div>
 
-            <div class="box-skill8">
-                <h1> Git</h1>
-                <div class="skill8">
+            <div class="box-skill">
+                <h1 class="git"> Git</h1>
+                <div class="skill-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
                 </div>
             </div>
 
-            <div class="box-skill7">
-                <h1> MongoDB</h1>
-                <div class="skill7">
+            <div class="box-skill">
+                <h1 class="mongodb"> MongoDB</h1>
+                <div class="skill-img">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+                </div>
+            </div>          
+        
+            <div class="box-skill">
+                <h1 class="postgres"> Postgres</h1>
+                <div class="skill-img">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                </div>
+            </div>
+            
+            <div class="box-skill">
+                <h1 class="docker"> Docker</h1>
+                <div class="skill-img">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg" />
                 </div>
             </div>
 
-
-        </div>
+            <div class="box-skill">
+                <h1 class="figma"> Figma</h1>
+                <div class="skill-img">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                </div>
+            </div>
+    </div>
     </section>
 
     <section id="projects" class="projects">
         <h1 class="title">Projetos</h1>
 
-        <div class="container swiper">
+        <div class="container swiper" id="container-swiper">
             <div class="slider-wrapper">
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide">
-                        <h2>Previsão do tempo</h2>
-                        <a href="https://thianecw.github.io/previsaodotempo/" target="_blank" class="project1-link">
+                    <div class="card-content">
+                        <h2>Hamburgeria</h2>
+                        <a href="https://thianecw.github.io/previsaodotempo/" target="_blank">
+                            <img class="project-img" src="./assets/devburger.png" /> </a>
+                            <p>
+                                Aplicação para hamburgueria com área do cliente e área administrativa. Permite cadastro, login, escolha de produtos e compra. Desenvolvido com <b>React, Node.js, Express, Docker, Postgres</b>, proporcionando uma experiência interativa e completa. </p>
+                              </p>
+                              <div class="link-git">
+                                <a href="https://github.com/thianecw/devburger-api" target="_blank">
+                                  <i class="devicon-github-original"></i>
+                                </a>
+                            </div>
+                              </div>                  
+                            </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-content">
+                            <h2>Previsão do tempo</h2>
+                        <a href="https://thianecw.github.io/previsaodotempo/" target="_blank">
                             <img class="project-img" src="./assets/previsaotempo.png" /> </a>
+
                         <p> Aplicativo que fornece a previsão do tempo para cidades e países em tempo real usando
                             uma API. Desenvolvido com <b>HTML, CSS e JavaScript</b> para uma experiência interativa e
                             precisa.</p>
+                            <div class="link-git">
+                                <a href="https://github.com/thianecw/previsaodotempo" target="_blank">
+                                  <i class="devicon-github-original"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
+                        <div class="swiper-slide">
+                            <div class="card-content">
+                                <h2>Quanto friso?</h2>
+                            <a href="https://thianecw.github.io/quantofriso/" target="_blank">
+                                <img class="project-img" src="./assets/quantofriso.png" /> </a>
+                            <p> Aplicação desenvolvida para utilização no setor textil e que auxilia na medida exata que o tecido precisa ser cortado para utilização, evitando desperdícios.
+                               Desenvolvido com <b>HTML, CSS e JavaScript</b></p>
+                               <div class="link-git">
+                                <a href="https://github.com/thianecw/quantofriso" target="_blank">
+                                  <i class="devicon-github-original"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+
                     <div class="swiper-slide">
-                        <h2>To-Do List</h2>
-                        <a href="https://thianecw.github.io/To-Do-list/" target="_blank" class="project2-link">
+                        <div class="card-content">
+                            <h2>To-Do List</h2>
+                        <a href="https://thianecw.github.io/To-Do-list/" target="_blank">
                             <img class="project-img" src="./assets/todolist.png" /> </a>
                         <p> Ferramenta web para gerenciamento de tarefas, permitindo criar, editar, marcar como
                             concluída e excluir itens de uma lista. Construída com <b>HTML, CSS e JavaScript</b> para
                             uma
                             gestão eficiente de tarefas diárias.</p>
+                            <div class="link-git">
+                                <a href="https://github.com/thianecw/To-Do-list" target="_blank">
+                                  <i class="devicon-github-original"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <h2>Conversor de moedas </h2>
+                        <div class="card-content">
+                            <h2>Conversor de moedas </h2>
                         <a href="https://thianecw.github.io/Currency-converter/" target="_blank">
                             <img class="project-img" src="./assets/conversor.png" /> </a>
                         <p>Aplicativo de conversão de moedas em tempo real, utilizando uma <b>API</b> para taxas
                             atualizadas. Desenvolvido com <b>HTML, CSS e JavaScript</b>, facilita a conversão entre
                             diversas moedas com precisão.</p>
+                            <div class="link-git">
+                                <a href="https://github.com/thianecw/Currency-converter" target="_blank">
+                                  <i class="devicon-github-original"></i>
+                                </a>
+                            </div>
+                            </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <h2>Cafeteria</h2>
+                        <div class="card-content">
+                            <h2>Cafeteria</h2>
                         <a href="https://thianecw.github.io/Bean-Code/" target="_blank">
                             <img class="project-img" src="./assets/cafeteria.png" /> </a>
                         <p> Website para uma cafeteria, apresentando menu, avaliações de clientes, informações de
                             contato e localização. Criado com <b>HTML e CSS</b> para uma apresentação elegante e
-                            funcional.
-                        </p>
-                    </div>
+                            funcional.    </p>                   
+                            <div class="link-git">
+                                <a href="https://github.com/thianecw/Bean-Code" target="_blank">
+                                  <i class="devicon-github-original"></i>
+                                </a>
+                            </div>
+                            </div>
+                            </div>
 
-                    <div class="swiper-slide">
-                        <h2>Mario Encanador </h2>
-                        <a href="https://thianecw.github.io/Mario-Encanador/" target="_blank" class="project4-link">
-                            <img class="project-img" src="./assets/mario.png" /> </a>
-                        <p> Site divertido para promoção de serviços de encanamento, incluindo um formulário de
-                            contato para solicitações de orçamento. Desenvolvido com <b>HTML e CSS</b> para um visual
-                            atraente e acessível.</p>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <h2>Tela login </h2>
-                        <a href="#" target="_blank" class="project5-link">
+                        <div class="swiper-slide">
+                        <div class="card-content">
+                            <h2>Tela login </h2>
+                        <a href="#" target="_blank">
                             <img class="project-img" src="./assets/telaloginreact.png" /> </a>
-                            <p> EM DESENVOLVIMENTO: Tela de login desenvolvida com <b>HTML, CSS, JavaScript e React.</b> A interface é simples, aproveitando os benefícios de componentes reutilizáveis do React.</p>
+                            <p> Tela de login desenvolvida com <b>HTML, CSS, JavaScript e React.</b> A interface é simples, aproveitando os benefícios de componentes reutilizáveis do React.</p>
+                            <div class="link-git">
+                                <a href="https://github.com/thianecw/Tela-login" target="_blank">
+                                  <i class="devicon-github-original"></i>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-content">
+                                <h2>Mario Encanador </h2>
+                            <a href="https://thianecw.github.io/Mario-Encanador/" target="_blank">
+                                <img class="project-img" src="./assets/mario.png" /> </a>
+                            <p> Site divertido para promoção de serviços de encanamento, incluindo um formulário de
+                                contato para solicitações de orçamento. Desenvolvido com <b>HTML e CSS</b> para um visual
+                                atraente e acessível.</p>
+                                <div class="link-git">
+                                    <a href="https://github.com/thianecw/Mario-Encanador" target="_blank">
+                                      <i class="devicon-github-original"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                     <div class="swiper-slide">
-                        <h2>Sorteador </h2>
+                        <div class="card-content">
+                            <h2>Sorteador </h2>
                         <a href="https://thianecw.github.io/Sorteador/" target="_blank" class="project6-link">
                             <img class="project-img" src="./assets/sorteador.png" /> </a>
                         <p> Site sorteador de números aleatóreos utilizando <b> HTML, CSS e JavaScript.</b> A interface é simples e responsiva, proporcionando uma experiência de usuário fluida.</p>
+                        <div class="link-git">
+                            <a href="https://github.com/thianecw/Sorteador" target="_blank">
+                              <i class="devicon-github-original"></i>
+                            </a>
+                        </div>                   
                     </div>
-
-                    <div class="swiper-slide">
-                        <h2>Jogo Mário </h2>
-                        <a href="https://thianecw.github.io/MarioGame/" target="_blank" class="project6-link">
-                            <img class="project-img" src="./assets/mariojogo.png" /> </a>
-                        <p> Jogo clássico do Mario Bross, desenvolvido com <b> HTML, CSS e JavaScript</b>. O jogo tem uma interface simples e responsiva, com animações visuais e sonoras.</p>
+                 </div>
+                    
+                 <div class="swiper-slide">
+                    <div class="card-content">
+                      <h2>Jogo Mário</h2>
+                      <a href="https://thianecw.github.io/MarioGame/" target="_blank" class="project6-link">
+                        <img class="project-img" src="./assets/mariojogo.png" />
+                      </a>
+                      <p>
+                        Jogo clássico do Mario Bross, desenvolvido com <b>HTML, CSS e JavaScript</b>.
+                        O jogo tem uma interface simples e responsiva, com animações visuais e sonoras.
+                      </p>
+                      <div class="link-git">
+                        <a href="https://github.com/thianecw/MarioGame" target="_blank">
+                          <i class="devicon-github-original"></i>
+                        </a>
+                      </div>
                     </div>
+                  </div>
 
                 </div>
                 <div class="swiper-pagination"></div>
@@ -244,7 +349,7 @@
                     <i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://www.github.com/thianecw" target="_blank" title="GitHub"><i
                         class="fa-brands fa-github"></i></a>
-                <a href="https://wa.link/ej4rzv" target="_blank" title="WhatsApp"><i
+                <a href="https://wa.me/5547992182468" target="_blank" title="WhatsApp"><i
                         class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
