@@ -4,17 +4,20 @@ import { CardContainer, ProjectImage, ProjectName, ProjectLink, Description, Git
 const ProjectCard = ({ title, description, image, link, repo }) => {
     return (
         <CardContainer>
-            <ProjectName>{title}</ProjectName>
+            <div>
+                <ProjectName>{title}</ProjectName>
+                <ProjectLink href={link} target="_blank" rel="noopener noreferrer">
+                    <ProjectImage src={image} alt={title} />
+                </ProjectLink>
+                <Description>{description}</Description>
+            </div>
 
-            <ProjectLink href={link} target="_blank" rel="noopener noreferrer">
-                <ProjectImage src={image} alt={title} />
-            </ProjectLink>
-            <Description>{description}</Description>
             <GitLink href={repo} target="_blank" rel="noopener noreferrer">
                 <i className="devicon-github-original" />
             </GitLink>
         </CardContainer>
     );
 };
+
 
 export default ProjectCard;

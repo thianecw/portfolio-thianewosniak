@@ -8,14 +8,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/free-mode';
 
 import ProjectCard from '../../components/ProjectCard';
-import devburgerImg from '../../assets/devburger.png';
 import toDoListImg from '../../assets/todolist.png';
 import quantoFrisoImg from '../../assets/quantofriso.png';
 import conversorImg from '../../assets/conversor.png';
 import cafeteriaImg from '../../assets/cafeteria.png';
 import previsaoImg from '../../assets/previsaotempo.png';
 import emDesenvolvimento from '../../assets/dev.png';
-
+import gravaiImg from '../../assets/gravai.png';
 
 const projects = [
     {
@@ -24,6 +23,13 @@ const projects = [
         image: emDesenvolvimento,
         link: '/',
         repo: 'https://github.com/thianecw/devburger-api',
+    },
+    {
+        title: 'Gravaí - Gravação de medalhas em eventos esportivos',
+        description: 'Aplicação web para gravação de medalhas em eventos esportivos. Desenvolvida com React, HTML e JavaScript.',
+        image: gravaiImg,
+        link: 'https://gravai.vercel.app/',
+        repo: 'https://github.com/thianecw/gravai-medal-moments',
     },
     {
         title: 'Pilates Online',
@@ -90,17 +96,22 @@ const Projects = () => {
                 breakpoints={{
                     0: {
                         slidesPerView: 1,
+                        spaceBetween: 20, // mais espaçamento em mobile
+                    },
+                    480: {
+                        slidesPerView: 1.2, // leve corte nas bordas p/ indicar scroll
                         spaceBetween: 20,
                     },
-                    620: {
+                    768: {
                         slidesPerView: 2,
-                        spaceBetween: 25,
+                        spaceBetween: 20,
                     },
                     1024: {
                         slidesPerView: 3,
-                        spaceBetween: 30,
+                        spaceBetween: 20,
                     },
                 }}
+
                 onSwiper={(swiper) => {
                     setIsBeginning(swiper.isBeginning);
                     setIsEnd(swiper.isEnd);

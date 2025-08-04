@@ -6,6 +6,7 @@ flex-direction: column;
 align-items: center;
 text-align: center;
 margin-bottom: 30px;
+background-color: #161616;
 `;
 
 export const Title = styled.h1`

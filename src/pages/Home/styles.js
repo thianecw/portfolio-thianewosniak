@@ -2,13 +2,13 @@ import styled from "styled-components";
 import b2 from "../../assets/bg2.jpg";
 
 export const MainContainer = styled.div`
-display: flex;
-margin-bottom: 100px;
-background-color: #212121;
-width: 100%;
-min-height: 80vh;
+  display: flex;
+  margin-bottom: 100px;
+  background-color: #212121;
+  width: 100%;
+  min-height: 80vh;
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
   }
@@ -49,59 +49,67 @@ export const ContainerLeft = styled.div`
 `;
 
 export const ContainerRight = styled.div`
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 30px;
-margin-top: 20px;
-overflow: hidden; 
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 20px;
+  overflow: hidden;
 
- img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-	border-radius: 50%;
-	margin-bottom: 15px;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+  }
 
-	 @media (max-width: 480px) {
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    @media (max-width: 480px) {
       height: 200px;
       width: 180px;
     }
-}
+  }
 
-h1 {
-  font-size: 26px;
-	font-weight: 100;
-	letter-spacing: 4px;
-	color: #ffffff;
-	text-align: center;
+  h1 {
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-align: center;
 
-	 @media (max-width: 480px) {
-    font-size: 22px;
+    @media (max-width: 480px) {
+      font-size: 22px;
     }
   }
 
-h2 {
-	color: #dddddd;
+  h2 {
+    color: #dddddd;
     margin: 10px 0;
-	font-weight: 200;
-	font-size: 21px;
-	text-align: center;
+    font-weight: 200;
+    font-size: 21px;
+    text-align: center;
 
-	@media (max-width: 480px) {
-    font-size: 18px;
+    @media (max-width: 480px) {
+      font-size: 18px;
     }
-}
+  }
 
-p {
+  p {
     font-size: 20px;
     text-align: center;
     color: #eeeeee;
     justify-self: center;
     margin-bottom: 10px;
+     line-height: 2; 
 
     @media (max-width: 480px) {
       font-size: 16px;
@@ -114,13 +122,24 @@ export const Title = styled.h3`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  gap: 12px; /* espaço entre ícones e texto */
+  margin: 30px 0 50px 0;
   color: ${({ theme }) => theme.mainText};
-  text-align: center;
-  margin: 30px;
-  font-size: 1.3rem;
-  font-weight: 100;
-  letter-spacing: 5px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  svg {
+    flex-shrink: 0; /* evita encolher */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    gap: 8px;
+  }
 `;
 
 export const Button = styled.button`

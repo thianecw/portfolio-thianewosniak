@@ -11,7 +11,7 @@ const globalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #212121;
+background-color: #161616;
     color: #fff;
     -webkit-font-smoothing: antialiased;
   }
@@ -35,14 +35,29 @@ const globalStyles = createGlobalStyle`
   color: #ef592d;
   background: transparent;
   text-decoration: none;
+  font-size: 40px;
 }
 
-    .swiper-pagination-bullet {
-    background-color: #888888;
-    opacity: 1;
-  }
+.swiper-pagination-bullet {
+  background-color: #888888;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
   .swiper-pagination-bullet-active {
     background-color: #ef592d;
+  }
+
+  @media (max-width: 480px) {
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 30px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
   }
 `;
 

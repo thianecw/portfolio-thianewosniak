@@ -26,7 +26,7 @@ export function Home() {
 						<path d="M207.23,203.42a8,8,0,0,1-10.66,3.81l-152-72a8,8,0,0,1,0-14.46l152-72a8,8,0,1,1,6.85,14.46L66.69,128l136.73,64.77A8,8,0,0,1,207.23,203.42Z" />
 					</svg>
 
-					sobre mim
+					<span>sobre mim</span>
 
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -42,10 +42,7 @@ export function Home() {
 				</Title>
 
 				<p>
-					Enfermeira migrando pra área <strong>tech</strong>, estudando <strong>Análise e Desenvolvimento de Sistemas</strong>
-				</p>
-				<p>
-					Tenho experiência em desenvolvimento web – sites, landing pages e aplicações <strong>Fullstack</strong>
+					Enfermeira migrando pra área <strong>tech</strong>, estudando <strong>Análise e Desenvolvimento de Sistemas</strong>. 					Tenho experiência em desenvolvimento web – sites, landing pages e aplicações <strong>Fullstack</strong>
 				</p>
 
 				<Button onClick={() => window.open("https://wa.me/5547992182468", "_blank")}>

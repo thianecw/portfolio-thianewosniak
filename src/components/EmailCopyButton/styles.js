@@ -5,6 +5,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: #eeeeee;
+background-color: #161616;
+
 
 p {
   font-size: 16px;
@@ -22,6 +24,6 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #212121;
+background-color: #161616;
 
 `;
